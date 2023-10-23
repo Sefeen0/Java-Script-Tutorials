@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: fantasy;
+  text-transform: capitalize;
+}
+:disabled {
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.control {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  transition: 0.5s;
+}
+.control .text {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  margin: 10% auto;
+}
+.control h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 100;
+}
+.control p {
+  font-size: 30px;
+  color: #dc0a0a;
+}
+.control button {
+  position: absolute;
+  padding: 10px 15px;
+  font-size: 25px;
+  background-color: #0075ff;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  z-index: 3;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+}
+.control .easy {
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+}
+.control .normal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.control .hard {
+  top: 50%;
+  left: 75%;
+  transform: translate(-75%, -50%);
+}
+.game {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.game h1 {
+  text-align: center;
+  background-color: #0096ff;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: white;
+}
+.game p {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: #444;
+}
+.game p .level {
+  color: #0096ff;
+}
+.game p .seconds {
+  color: red;
+}
+.game .random-word {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: #0096ff;
+}
+.game button {
+  font-family: fantasy;
+  display: block;
+  margin: auto;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  background-color: #009688;
+  color: white;
+  cursor: pointer;
+}
+.game input {
+  display: block;
+  margin: auto;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 4px solid #0096ff;
+  text-align: center;
+}
+.game .up-coming-words {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.game .up-coming-words div {
+  background-color: #0096ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.game .footer {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #444;
+}
+.game .footer .time span {
+  color: red;
+}
+.game .footer .score span {
+  color: #0096ff;
+}
+.finish {
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 100;
+}
+.finish .good {
+  color: #009688;
+}
+.finish .bad {
+  color: red;
+}

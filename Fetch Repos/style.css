@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+}
+.container {
+  width: 100%;
+  margin: 20px auto 0;
+  background-color: #aaa;
+}
+.container .get {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ccc;
+}
+.container .get input {
+  border: none;
+  padding: 20px;
+  width: 80%;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  height: 64px;
+}
+.container .get input:focus {
+  outline: 1px solid #e61e63;
+}
+.container .get .get-button {
+  width: 20%;
+  padding: 10px;
+  background-color: #e61e63;
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .show {
+  padding: 20px;
+}
+.container .show .no {
+  background-color: white;
+  font-size: 25px;
+  height: 100px;
+  display: block;
+  line-height: 4;
+  text-align: center;
+}
+.container .show .data {
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+
+  align-items: center;
+}
+.container .show .data:not(:last-child) {
+  margin-bottom: 10px;
+}
+.container .show .data a,
+.container .show .data .stars {
+  color: white;
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.container .show .data a {
+  text-decoration: none;
+  background-color: #e91e63;
+  margin-left: 5px;
+}
+.container .show .data .stars {
+  background-color: #009688;
+  margin-left: auto;
+}

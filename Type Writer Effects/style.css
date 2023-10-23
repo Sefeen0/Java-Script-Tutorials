@@ -1,0 +1,38 @@
+:root {
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: fantasy;
+  text-transform: capitalize;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 50px 0px;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes width-effect {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--text-width);
+  }
+}
+@keyframes blink {
+  from {
+    border-right-color: rgb(51, 51, 51);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

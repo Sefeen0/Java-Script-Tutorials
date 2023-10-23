@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+}
+.alert {
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(0 0 0 / 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  transition: display 1s;
+  display: none;
+}
+.alert h2 {
+  font-size: 30px;
+  color: white;
+  line-height: 5;
+}
+.alert .ok {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.container {
+  width: 50%;
+  margin: 50px auto 0;
+  background-color: #f6f6f6;
+}
+.container .add {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+  background-color: #009688;
+}
+.container .add input {
+  flex-basis: 95%;
+  border: none;
+  padding: 15px 20px;
+  background-color: rgba(255 255 255 / 30%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.container .add input:focus {
+  outline: none;
+}
+.container .add button {
+  border: none;
+  outline: none;
+  flex-basis: 5%;
+  position: absolute;
+  right: 20px;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #009688;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.container .add button:hover {
+  transform: rotate(90deg);
+}
+.container .content {
+  padding: 20px;
+}
+.container .content .tasks,
+.container .content .no {
+  background-color: white;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+.container .content .tasks:hover {
+  background-color: rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+.container .content .no {
+  color: #777;
+}
+.container .content .tasks .task {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.container .content > span:not(:last-child) {
+  margin-bottom: 20px;
+}
+.container .content .tasks .delete {
+  font-size: 16px;
+  background-color: #e91e63;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .content .tasks .task.finished {
+  color: rgb(0 0 0 / 20%);
+  text-decoration: line-through;
+}
+.status {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.status > span {
+  font-weight: bold;
+}
+.status > span span {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+.status .count span {
+  background-color: #e91e63;
+}
+.status .completed span {
+  background-color: #03a9f4;
+}
+.status .finish-all,
+.status .del-all {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+.status .del-all {
+  background-color: #e91e63;
+}
+.status .finish-all {
+  background-color: #03a9f4;
+}

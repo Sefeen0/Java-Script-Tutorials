@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 50vh;
+}
+.serial {
+    text-align: center;
+  font-weight: 100;
+  background-color: #eee;
+  padding: 20px;
+  font-size: 35px;
+  width: 450px;
+  height: 83px;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 100;
+  background-color: #f44336;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: white;
+}
